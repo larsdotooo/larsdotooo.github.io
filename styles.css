@@ -1,0 +1,73 @@
+/* plaziert die innere Box immer im Rahmen der äußeren Box? */
+* {
+    box-sizing: border-box;
+}
+
+/* allgemeine Styles für body (Ausrichtung, Hintergrundfarbe, Schriftart etc.) */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color:bisque;
+}
+
+body, .quote-input {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Styles und Position für Speed Anzeige */
+.speed {
+    position: absolute;
+    top: 4rem;
+    font-size: 6rem;
+    color: rgb(211, 158, 83);
+    font-weight: bold;
+}
+
+/* Hintergrundfarbe, Ränder, Rundung und max Breite für den Container festlegen */
+.container {
+    background-color: rgb(211, 158, 83);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 900px;
+    max-width: 90%;
+}
+
+/* Text-Anzeige, Abstand und Schriftgröße */
+.quote-display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+    font-size: 2rem;
+}
+
+/* Textfeld, Hintergrundfarbe, Rand, Größe, Rundung, Schriftgröße */
+.quote-input {
+    background-color: transparent;
+    border: 5px solid bisque;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+/* Rand der Textbox wird schwarz wenn die Maus (der Fokus) sich in der Box befindet */
+.quote-input:focus {
+    border-color: black;
+}
+
+/* Farben für die Klassen correct und incorrect die auf jeden einzelnen Buchstaben angewand werden */
+.correct {
+    color: green;
+}
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
