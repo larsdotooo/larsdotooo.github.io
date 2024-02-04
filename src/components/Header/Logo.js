@@ -1,7 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
-import profileImg from "@/public/coffee.png"
-import { CoffeeIcon } from "../Icons";
+import { CoffeeIcon } from "@/src/components/Icons";
 
 const Logo = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Tag from '../Elements/Tag'
+import Tag from '@/src/components/Elements/Tag'
 import Link from 'next/link'
 import Image from 'next/image'
 

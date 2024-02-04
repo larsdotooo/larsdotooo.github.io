@@ -1,7 +1,7 @@
 import React from 'react'
 import { sortBlogs } from '@/src/utils'
 import Image from 'next/image'
-import Tag from '../Elements/Tag'
+import Tag from '@/src/components/Elements/Tag'
 import Link from 'next/link'
 
 const HomeCoverSection = ({blogs}) => {
