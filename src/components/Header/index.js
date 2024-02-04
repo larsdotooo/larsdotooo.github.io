@@ -6,26 +6,21 @@ const Header = () => {
   return (
     <header className="w-full p-4 px-10">
         <Logo />
-        <nav className="w-max py-3 px-8 border-2 border-solid border-dark rounded-full font-medium capitalize flex
+        <nav className="w-max py-2 px-8 border-2 border-solid border-dark rounded-full font-medium capitalize flex
         items-center
-        fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm">
-            <Link href="/" className="mr-2">Home</Link>
-            <Link href="/about" className="mr-2">About</Link>
-            <Link href="/contact" className="mr-2">Contact</Link>
-            <button>
-                <SunIcon />
+        fixed top-4 right-12 bg-light/80 backdrop-blur-sm z-50">
+            <Link href="/thoughts" className="mr-2">Gedanken</Link>
+            <Link href="/projects" className="mx-2">Projekte</Link>
+            <button className='mr-5 ml-3'>
+                <SunIcon/>
             </button>
-        </nav>
-        <div className="flex justify-end fixed top-6 right-6">
-            <div>
-                <a href="https://example.com" className="inline-block w-8 h-8 mr-3"><ContactIcon
-                className="hover:scale-125 transition-all ease duration-200"/></a>
-                <a href="https://example.com" className="inline-block w-8 h-8 mr-2"><GithubIcon
-                className="hover:scale-125 transition-all ease duration-200"/></a>
-            </div>
-            <a href="https://example.com" className="inline-block w-12 h-12"><HeartIcon
+            <a href="https://example.com" className="inline-block w-6 h-6 mr-2"><ContactIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
-        </div>
+            <a href="https://example.com" className="inline-block w-6 h-6 mr-1"><GithubIcon
+            className="hover:scale-125 transition-all ease duration-200"/></a>
+            <a href="https://example.com" className="w-8 h-8 mt-2"><HeartIcon
+            className="hover:scale-125 transition-all ease duration-200"/></a>
+        </nav>
     </header>
   )
 }
