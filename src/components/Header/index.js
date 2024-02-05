@@ -16,7 +16,7 @@ const Header = () => {
             </button>
             <a href="https://example.com" className="inline-block w-6 h-6 mr-2"><ContactIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
-            <a href="https://example.com" className="inline-block w-6 h-6 mr-1"><GithubIcon
+            <a href="https://github.com/larsdotooo/larsdotooo.github.io" className="inline-block w-6 h-6 mr-1"><GithubIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
             <a href="https://example.com" className="w-8 h-8 mt-2"><HeartIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
