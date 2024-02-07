@@ -9,8 +9,8 @@ const Header = () => {
         <nav className="w-max py-2 px-8 border-2 border-solid border-dark rounded-full font-medium capitalize flex
         items-center
         fixed top-4 right-12 bg-light/80 backdrop-blur-sm z-50">
-            <Link href="/thoughts" className="mr-2">Gedanken</Link>
-            <Link href="/projects" className="mx-2">Projekte</Link>
+            <Link href="/gedanken" className="mr-2">Gedanken</Link>
+            <Link href="/projekte" className="mx-2">Projekte</Link>
             <button className='mr-5 ml-3'>
                 <SunIcon/>
             </button>

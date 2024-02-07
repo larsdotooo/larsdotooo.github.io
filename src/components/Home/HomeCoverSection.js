@@ -3,11 +3,12 @@ import { sortBlogs } from '@/src/utils'
 import Image from 'next/image'
 import Tag from '@/src/components/Elements/Tag'
 import Link from 'next/link'
+import { slug } from 'github-slugger'
 
 const HomeCoverSection = ({blogs}) => {
 
     const sortedBlogs = sortBlogs(blogs);
-    const blog = sortedBlogs[0];
+    const blog = sortedBlogs[1];
     return (
         <div className='w-full inline-block'>
             <article className='flex flex-col items-start justify-end mx-10 relative h-[85vh]'>
@@ -23,7 +24,7 @@ const HomeCoverSection = ({blogs}) => {
                 />
 
                 <div className='w-3/4 p-16 flex flex-col items-start justify-center z-0 text-light'>
-                    <Tag link={'/categories/${blog.tags[0]}'} name={blog.tags[0]} />
+                <Tag link={`/categories/${slug(blog.tags[0])}`} name={blog.tags[0]} />
                     <Link href={blog.url} className='mt-6'>
                         <h1 className='font-bold text-4xl'>
                             <span className='bg-gradient-to-r from-orange-300/70 to-orange-300/70 bg-[length:0px_6px]

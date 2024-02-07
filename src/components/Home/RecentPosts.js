@@ -11,7 +11,7 @@ const RecentPosts = ({blogs}) => {
         <h2 className='inline-block font-bold capitalize text-4xl'>
         Mehr Gedanken
         </h2>
-        <Link href='/categories/all' className='inline-block font-medium text-orange-500 underline underline-offset-2 text-lg'>
+        <Link href='/categories/alle' className='inline-block font-medium text-orange-500 underline underline-offset-2 text-lg'>
         alle Gedanken
         </Link>
         </div>
