@@ -15,7 +15,8 @@ const NoteSection = ({blogs}) => {
                     max-h-[80vh] overflow-hidden overflow-y-auto flex justify-items-center' open >
                         <summary className='text-lg text-center font-semibold cursor-pointer mt-1'>
                             Notizbuch
-                            <CoffeeIcon className="inline-block w-10 h-10 py-2 px-2 mb-1"/>
+                            <div className="inline-block w-10 h-10"><CoffeeIcon className="inline-block w-10 h-10 py-2 px-2 mb-1"/></div>
+                            
                         </summary>
                         <ul className='font-in text-base'>
                             {

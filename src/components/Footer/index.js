@@ -16,11 +16,11 @@ const Footer = () => {
             . Also macht damit was ihr wollt!</span>
         </div>
         <div className="flex items-center my-5">
-            <a href="https://example.com" className="inline-block w-6 h-6 mr-2"><ContactIcon
+            <a href="/kontakt" className="inline-block w-6 h-6 mr-2"><ContactIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
             <a href="https://github.com/larsdotooo/larsdotooo.github.io" className="inline-block w-6 h-6 mr-1"><GithubIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
-            <a href="https://example.com" className="w-8 h-8 mt-2"><HeartIcon
+            <a href="/liebe" className="w-8 h-8 mt-2"><HeartIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
             <Link href="/sitemap.xml" className="text-center ml-5 underline font-medium">
                 sitemap.xml

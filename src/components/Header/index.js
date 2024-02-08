@@ -14,11 +14,11 @@ const Header = () => {
             <button className='mr-5 ml-3'>
                 <SunIcon/>
             </button>
-            <a href="https://example.com" className="inline-block w-6 h-6 mr-2"><ContactIcon
+            <a href="/kontakt" className="inline-block w-6 h-6 mr-2"><ContactIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
             <a href="https://github.com/larsdotooo/larsdotooo.github.io" className="inline-block w-6 h-6 mr-1"><GithubIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
-            <a href="https://example.com" className="w-8 h-8 mt-2"><HeartIcon
+            <a href="/liebe" className="w-8 h-8 mt-2"><HeartIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
         </nav>
     </header>
