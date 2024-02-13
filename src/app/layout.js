@@ -15,7 +15,7 @@ export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     template: `%s | ${siteMetadata.title}`,
-    default: siteMetadata.title, // a default is required when creating a template
+    default: siteMetadata.title,
   },
   description: siteMetadata.description,
   openGraph: {
@@ -44,7 +44,7 @@ export const metadata = {
     title: siteMetadata.title,
     images: [siteMetadata.socialBanner],
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
         )}
       >
 
-<Script>
+<Script id="theme-switcher" strategy="beforeInteractive">
   {
     `if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
