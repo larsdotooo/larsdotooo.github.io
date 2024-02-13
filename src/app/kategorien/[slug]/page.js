@@ -25,6 +25,12 @@ export async function generateStaticParams() {
     return paths;
 }
 
+export async function generateMetadata({ params }) {
+    return {
+      title: `Gedanken zu: ${params.slug === "alle" ? "Philosophie, Gesundheit, Geld und so weiter" : params.slug.replaceAll("-"," ")}`,
+      description: `Mehr über #${params.slug === "alle" ? "alle meine Beiträge" : params.slug} lesen`,
+    };
+  }
 
 
 const CategoryPage = ({params}) => {

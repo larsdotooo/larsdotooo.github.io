@@ -20,13 +20,13 @@ const BlogLayoutOne = ({blog}) => {
                 ease duration-300'
                 />
 
-                <div className='w-full absolute bottom-0 p-10 z-20 x'>
+                <div className='w-full absolute bottom-0 p-4 xs:p-6 sm:p-10 z-20 x'>
                     <Tag link={`/kategorien/${slug(blog.tags[0])}`} name={blog.tags[0]} 
-                    className='px-6 text-sm py-2 !border'
+                    className='px-6 text-md sm:text-lg py-1 sm:py-2 !border'
                     />
                     <Link href={blog.url} className='mt-6'>
-                        <h2 className='font-bold text-2xl text-light mt-4'>
-                            <span className='bg-gradient-to-r from-orange-300/70 to-orange-300/70 bg-[length:0px_6px]
+                        <h2 className='font-bold text-2xl md:text-2xl text-light mt-2 sm:mt-4'>
+                            <span className='bg-gradient-to-r from-orange-300/90 to-orange-300/90 dark:from-orange-400/70 dark:to-orange-400/70 bg-[length:0px_6px]
                             group-hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500'>
                             {blog.title}
                             </span>

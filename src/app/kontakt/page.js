@@ -1,5 +1,8 @@
 
-
+export const metadata = {
+    title: "Mooooin",
+    description: "Einfach mal HALLO sagen!",
+  }
 
 export default function Kontakt(){
 

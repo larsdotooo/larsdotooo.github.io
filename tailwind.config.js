@@ -5,6 +5,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -17,6 +18,12 @@ module.exports = {
       fontFamily:{
         mr: ["var(--font-mr)"],
         in: ["var(--font-in)"]
+      },
+      screens:{
+        sxl: "1180px",
+        // @media (min-width: 1180px){...}
+        xs: "480px"
+        // @media (min-width: 480px){...}
       }
     },
   },
