@@ -64,9 +64,9 @@ export default function BlogPage({ params }) {
 
     return ( 
         <article>
-            <div className='mb-8 text-center relative w-full h-[50vh] bg-dark'>
+            <div className='mb-8 text-center relative w-full h-[40vh] sm:h-[50vh] bg-dark'>
                 
-                <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/30" />
+                <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/40 dark:bg-dark/30" />
                     <Image
                     src={blog.image.filePath.replace("../public", "")}
                     placeholder='blur'
@@ -79,7 +79,7 @@ export default function BlogPage({ params }) {
             </div>
             
             <div className='m-10'>
-                <h1 className="mt-6 font-semibold text-dark text-4xl text-center">
+                <h1 className="mt-6 font-semibold text-dark dark:text-light text-2xl md:text-3xl lg:text-4xl text-center">
                     {blog.title}
                 </h1>
             </div>
@@ -89,7 +89,7 @@ export default function BlogPage({ params }) {
             <BlogDetails blog={blog} slug={params.slug} />
 
             <div className="mt-8 px-10 flex flex-col items-center">
-                <div className="max-w-[1200px]">
+                <div className="w-full lg:max-w-[1200px]">
                 <RenderMdx blog={blog} />
                 </div>
             </div>

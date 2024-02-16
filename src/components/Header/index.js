@@ -52,7 +52,7 @@ const Header = () => {
         right-1/2 translate-x-1/2
         "
         style={{
-          bottom: click ? "1rem" : "-5rem"
+          bottom: click ? "1.5rem" : "-6rem"
          }}
         >
             <Link href="/gedanken" className="mr-2">Gedanken</Link>

@@ -13,7 +13,9 @@ const RenderMdx = ({blog}) => {
     const MDXContent = useMDXComponent(blog.body.code)
 
   return (
-    <div className='font-in prose prose-lg max-w-max'>
+    <div className='font-in prose sm:prose-base md:prose-lg max-w-max
+    dark:prose-invert
+    '>
         <MDXContent components={mdxComponents}/>
     </div>
   )
