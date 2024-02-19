@@ -62,8 +62,43 @@ export default function BlogPage({ params }) {
 
     const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug)
 
+
+    if(!blog){
+      notFound()
+    }
+  
+  
+    let imageList = [siteMetadata.socialBanner];
+    if (blog.image) {
+      imageList =
+        typeof blog.image.filePath === "string"
+          ? [siteMetadata.siteUrl + blog.image.filePath.replace("../public", "")]
+          : blog.image;
+    }
+  
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": blog.title,
+      "description": blog.description,
+      "image": imageList,
+      "datePublished": new Date(blog.publishedAt).toISOString(),
+      "dateModified": new Date(blog.updatedAt || blog.publishedAt).toISOString(),
+      "author": [{
+          "@type": "Person",
+          "name": blog?.author ? [blog.author] : siteMetadata.author,
+          "url": siteMetadata.siteUrl + blog.url,
+        }]
+    }
+
     return ( 
-        <article>
+
+      <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article>
             <div className='mb-8 text-center relative w-full h-[40vh] sm:h-[50vh] bg-dark'>
                 
                 <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/40 dark:bg-dark/30" />
@@ -75,6 +110,8 @@ export default function BlogPage({ params }) {
                     width={blog.image.width}
                     height={blog.image.height}
                     className='aspect-square w-full h-full object-cover object-center'
+                    priority
+                    sizes="100vw"
                     />
             </div>
             
@@ -88,11 +125,15 @@ export default function BlogPage({ params }) {
 
             <BlogDetails blog={blog} slug={params.slug} />
 
-            <div className="mt-8 px-10 flex flex-col items-center">
+            <div className="mt-8 px-5 md:px-10 flex flex-col items-center">
                 <div className="w-full lg:max-w-[1200px]">
                 <RenderMdx blog={blog} />
                 </div>
             </div>
         </article>
+      </>
+
+    
+        
     )
 }

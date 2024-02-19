@@ -2,7 +2,7 @@ const siteMetadata = {
     title: 'OUT OF ORDINARY',
     author: 'Lars',
     headerTitle: 'Out Of Ordinary',
-    description: 'out of ordinary',
+    description: 'Ideen, Gedanken und Projekte von Lars',
     language: 'de',
     theme: 'system', // system, dark or light
     siteUrl: 'https://lars.ooo', // your website URL

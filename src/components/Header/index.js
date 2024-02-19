@@ -57,8 +57,13 @@ const Header = () => {
         >
             <Link href="/gedanken" className="mr-2">Gedanken</Link>
             <Link href="/projekte" className="mx-2">Projekte</Link>
-            <button className="mr-4 ml-3" onClick={() => setMode(mode === "light" ? "dark" : "light") }>
-                <SunIcon/>
+            <button className="w-6 h-6 ease ml-4 mr-6 flex items-center justify-center rounded-full"
+            onClick={() => setMode(mode === "light" ? "dark" : "light") }
+            >
+              {
+                mode === "light" ? <MoonIcon className={"fill-dark"}/> : <SunIcon className={"fill-dark"}/>
+              }
+                
             </button>
             <a href="/kontakt" className="inline-block w-6 h-6 mr-2"><ContactIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>
@@ -74,8 +79,13 @@ const Header = () => {
         fixed top-4 right-10 bg-light/80 backdrop-blur-sm z-50">
             <Link href="/gedanken" className="mr-2">Gedanken</Link>
             <Link href="/projekte" className="mx-2">Projekte</Link>
-            <button className="mr-4 ml-3" onClick={() => setMode(mode === "light" ? "dark" : "light") }>
-                <SunIcon/>
+            <button className="w-6 h-6 ease ml-4 mr-6 flex items-center justify-center rounded-full"
+            onClick={() => setMode(mode === "light" ? "dark" : "light") }
+            >
+              {
+                mode === "light" ? <MoonIcon className={"fill-dark"}/> : <SunIcon className={"fill-dark"}/>
+              }
+                
             </button>
             <a href="/kontakt" className="inline-block w-6 h-6 mr-2"><ContactIcon
             className="hover:scale-125 transition-all ease duration-200"/></a>

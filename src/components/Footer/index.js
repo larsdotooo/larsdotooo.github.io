@@ -6,7 +6,7 @@ import siteMetadata from '@/src/utils/siteMetaData';
 const Footer = () => {
 
   return (
-    <footer className="mt-16 mx-10 flex flex-col items-center text-dark dark:text-light">
+    <footer className="mb-32 sm:mb-0 mt-8 sm:mt-16 mx-5 md:mx-10 flex flex-col items-center text-dark dark:text-light">
         
         
 
@@ -16,7 +16,7 @@ const Footer = () => {
             CC BY-SA 4.0 Lizenz</a>
             . Also macht damit was ihr wollt!</span>
         </div>
-        <div className="flex items-center my-5">
+        <div className="hidden sm:flex items-center my-5">
             <a href="/kontakt" className="inline-block w-6 h-6 mr-2"><ContactIcon
             className="hover:scale-125 transition-all ease duration-200 dark:fill-light"/></a>
             <a href={siteMetadata.github} className="inline-block w-6 h-6 mr-1"><GithubIcon

@@ -28,8 +28,8 @@ const NoteSection = ({blogs}) => {
                                             className='data-[level=two]:pl-2 data-[level=two]:pt-2
                                             data-[level=two]:border-t data-[level=two]:text-lg
                                             border-solid border-dark/40
-
-                                            data-[level=three]:pl-6
+                                            data-[level=three]:pl-4
+                                            sm:data-[level=three]:pl-6
                                             flex items-center justify-start
                                             '
                                         >

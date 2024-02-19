@@ -22,6 +22,7 @@ const ThoughtBox = () => {
         alt='picture by michael daniels'
         fill
         className='w-full h-full object-center object-cover rounded-3xl -z-10'
+        priority
         />
 
         <div className="w-full h-1/2 sm:h-1/3 flex flex-col items-center justify-center text-light z-40">

@@ -5,9 +5,13 @@ export const metadata = {
   }
 
 export default function Projekte() {
+  
     return <>
     
+    <div className="px-5 md:px-10 text-dark dark:text-light">
     Hier kommen die Projekte dann hin!
+    </div>
+    
     
     </>
 }

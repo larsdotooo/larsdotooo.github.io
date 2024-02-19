@@ -6,5 +6,11 @@ export const metadata = {
 
 export default function Liebe(){
 
-    return <section>Liebe</section>
+    return <>
+    
+    <div className="px-5 md:px-10 text-dark dark:text-light">
+    All you need is love
+    </div>
+
+    </>
 }
