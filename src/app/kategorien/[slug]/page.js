@@ -1,6 +1,7 @@
 import { allBlogs } from "@/.contentlayer/generated";
 import BlogLayoutThree from "@/src/components/Blog/BlogLayoutThree";
 import Categories from "@/src/components/Blog/Categories";
+import { sortBlogs } from "@/src/utils";
 import GithubSlugger, { slug } from "github-slugger";
 
 const slugger = new GithubSlugger();
@@ -49,6 +50,7 @@ const CategoryPage = ({params}) => {
         })
     })
 
+    const sortedBlogs = sortBlogs(blogs);
 
     return <article className='mt-12 flex flex-col text-dark dark:text-light'>
         <div className='px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col'>
@@ -61,7 +63,7 @@ const CategoryPage = ({params}) => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-16 mt-5 sm:mt-10 md:mt-24 px-5 sm:px-10 md:px-24 sxl:px-32">
             {
-                blogs.map((blog, index) => 
+                sortedBlogs.map((blog, index) => 
                 <article key={index} className='col-span-1 row-span-1 relative'>
                     <BlogLayoutThree blog={blog} />
                 </article>)

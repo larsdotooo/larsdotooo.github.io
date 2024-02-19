@@ -5,7 +5,7 @@ import React from 'react'
 import ViewCounter from './ViewCounter'
 
 const BlogDetails = ({blog, slug: blogSlug}) => {
-    console.log(blog)
+
   return (
     <div className='px-2 md:px-10 bg-light dark:bg-dark text-dark dark:text-light flex items-center justify-around flex-wrap text-lg sm:text-xl
     font-medium mx-5 md:mx-10 border-2 border-dark dark:border-light rounded-3xl'>

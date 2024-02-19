@@ -1,6 +1,6 @@
 import RenderMdx from "@/src/components/Blog/RenderMdx"
 import { sortBlogs } from "@/src/utils";
-import { CoffeeIcon } from "../Icons";
+import { SkizzeIcon } from "../Icons";
 
 const NoteSection = ({blogs}) => {
 
@@ -12,10 +12,10 @@ const NoteSection = ({blogs}) => {
             <div className="grid grid-cols-12 gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10">
                 <div className='col-span-12 lg:col-span-4'>
                     <details className='border-[2px] border-solid border-dark dark:border-light text-dark dark:text-light rounded-2xl p-1 sticky top-6
-                    max-h-[80vh] overflow-hidden overflow-y-auto flex justify-items-center' close >
-                        <summary className='text-lg text-center font-semibold cursor-pointer mt-1'>
+                    max-h-[80vh] overflow-hidden overflow-y-auto flex justify-items-center'>
+                        <summary className='text-xl text-center font-semibold cursor-pointer mt-1'>
                             Notizbuch
-                            <div className="inline-block w-10 h-10"><CoffeeIcon className="inline-block w-10 h-10 py-2 px-2 mb-1"/></div>
+                            <div className="inline-block w-10 h-10"><SkizzeIcon className="inline-block w-10 h-10 py-2 px-2 mb-1 fill-dark dark:fill-light"/></div>
                             
                         </summary>
                         <ul className='font-in text-base'>

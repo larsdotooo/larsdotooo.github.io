@@ -7,8 +7,6 @@ import {allBlogs} from "contentlayer/generated"
 export default function Gedanken() {
     return <>
     
-    <HomeCoverSection blogs={allBlogs} />
-    <FeaturedPosts blogs={allBlogs} />
     <RecentPosts blogs={allBlogs} />
     
     </>
