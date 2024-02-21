@@ -8,12 +8,12 @@ const ThoughtBox = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     console.log(errors);
-    
+
   return (
 
 
     <div className='w-full inline-block'>
-      <article className='flex flex-col items-start justify-end mx-5 sm:mx-10 relative h-[60vh] sm:h-[85vh]'>
+      <article className='flex flex-col items-start justify-end mx-5 sm:mx-10 relative h-[60vh] sm:h-[75vh] lg:h-[85vh] xl:h-[85vh] mb-0 lg:mb-10'>
 
         <div className='absolute top-0 left-0 bottom-0 right-0 h-full
         bg-gradient-to-b from-transparent from-0% to-dark/50 rounded-3xl z-0' />
